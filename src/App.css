@@ -1,0 +1,161 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f3f3f3;
+}
+
+.page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 35px 20px;
+}
+
+.calculator-title {
+  margin: 0 0 25px 0;
+  color: #111111 !important;
+  font-size: 28px;
+  text-align: center;
+}
+
+/* Calculator Body */
+
+.calculator {
+  width: 390px;
+  background-color: #202020;
+  padding: 28px;
+  border-radius: 30px;
+
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.25);
+}
+
+/* Name */
+
+h1 {
+  margin: 0 0 22px 0;
+
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  line-height: 1.4;
+}
+
+/* Calculator Display */
+
+.display {
+  width: 100%;
+  height: 90px;
+
+  background-color: #eeeeee;
+  color: #222;
+
+  border-radius: 20px;
+
+  margin-bottom: 25px;
+  padding: 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  font-size: 35px;
+
+  overflow: hidden;
+}
+
+/* Button Grid */
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+/* Normal Buttons */
+
+button {
+  width: 65px;
+  height: 65px;
+
+  border: none;
+  border-radius: 50%;
+
+  background-color: #484848;
+  color: white;
+
+  font-size: 21px;
+  font-weight: bold;
+
+  cursor: pointer;
+
+  justify-self: center;
+
+  transition: 0.15s;
+}
+
+/* Hover */
+
+button:hover {
+  background-color: #5a5a5a;
+}
+
+/* Click Effect */
+
+button:active {
+  transform: scale(0.92);
+}
+
+/* Operators */
+
+.operator {
+  background-color: #ff9226;
+}
+
+.operator:hover {
+  background-color: #e9821f;
+}
+
+/* Clear */
+
+.clear {
+  background-color: #df5353;
+}
+
+.clear:hover {
+  background-color: #c94747;
+}
+
+/* Equal */
+
+.equal {
+  background-color: #5d78d6;
+}
+
+.equal:hover {
+  background-color: #4d67bd;
+}
+
+/* Surname Button */
+
+.surname {
+  width: 100%;
+  height: 55px;
+
+  margin-top: 24px;
+
+  border-radius: 18px;
+
+  background-color: #6c63d9;
+
+  font-size: 18px;
+  letter-spacing: 2px;
+}
+
+.surname:hover {
+  background-color: #5d55c7;
+}
