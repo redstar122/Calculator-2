@@ -40,7 +40,7 @@ function App() {
     if (operand1 !== null) {
       setOperator(value);
       setOperand2(null);
-      setDisplay("");
+      setDisplay(value);
       setIsResultDisplayed(false);
     }
   };
